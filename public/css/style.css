@@ -1,7 +1,97 @@
+/* main dashboard */
+
 .dashboard {
     background-color: #fdf9f9;
     display: flex;
     flex-direction: row;
     height: 100vh;
     width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* taks card */
+
+.task_main {
+    width: 20%;
+    max-width: 100%;
+    height: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task_header {
+    background-color: #e6e5e5;
+    padding: .7em 1em;
+}
+
+.task_header h2 {
+    color: #757575;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: .04em;
+}
+
+.task_footer .row1 .left i {
+    color: #4689dc;
+    margin-top: .372em;
+    margin-right: .6em;
+}
+
+.task_footer .row2 .left i {
+    color: #21ba45;
+    margin-top: .372em;
+    margin-right: .6em;
+}
+
+.task_footer .row2.AccountSetup .left i,
+.task_footer .row2.AccountSetup .right {
+    color: #d4d3d3;
+}
+
+.task_footer .row2.MarketsOpen {
+    display: none;
+}
+
+.task_footer .row1 .right {
+    color: #4689dc;
+    font-size: .8em;
+}
+
+.task_footer .row2 .right {
+    color: #21ba45;
+    font-size: .8em;
+}
+
+.task_footer .row1 .left p,
+.task_footer .row2 .left p {
+    color: #d4d3d3;
+    font-size: .8em;
+}
+
+.task_footer .row1,
+.task_footer .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5em .5em;
+    border-top: 1px solid #e6e5e5;
+}
+
+.task_footer .row1 .left,
+.task_footer .row2 .left {
+    display: flex;
+    flex-direction: row;
+}
+
+/* charts */
+
+.recharts-surface {
+    margin-top: -6em;
+}
+
+.recharts-wrapper {
+    height: 250px !important;
 }
